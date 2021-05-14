@@ -1,0 +1,637 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.8.3"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.26.0"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉curso-clojure-cartao.core꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+; Error printing return value (ClassCastException) at clojure.core/filter$fn (core.clj:2817).
+; java.lang.Long cannot be cast to clojure.lang.IFn
+; Evaluation of file core.clj failed: class clojure.lang.ExceptionInfo
+
+clj꞉curso-clojure-cartao.core꞉> 
+clj꞉curso-clojure-cartao.core꞉> 
+; Error printing return value (ClassCastException) at clojure.core/filter$fn (core.clj:2817).
+; java.lang.Long cannot be cast to clojure.lang.IFn
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+; Error printing return value (ClassCastException) at clojure.core/filter$fn (core.clj:2817).
+; java.lang.Long cannot be cast to clojure.lang.IFn
+; Evaluation of file core.clj failed: class clojure.lang.ExceptionInfo
+
+clj꞉curso-clojure-cartao.core꞉> 
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+({:client-id 1, :name "Fulano", :cpf 12345600000, :email "fulano@gmail.com"})
+clj꞉curso-clojure-cartao.core꞉> 
+({:client-id 1, :name "Fulano", :cpf 12345600000, :email "fulano@gmail.com"})
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+()
+clj꞉curso-clojure-cartao.core꞉> 
+({:card-number 222222222222222, :cvv 235, :expiry-date #object[org.joda.time.DateTime 0x74dcfaf8 "2025-03-31T00:00:00.000Z"], :limit 2000, :client-id 15})
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: db.clj
+#'curso-clojure-cartao.db/transactions
+clj꞉curso-clojure-cartao.db꞉> 
+; Evaluating file: core.clj
+({:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222})
+clj꞉curso-clojure-cartao.core꞉> 
+({:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222})
+clj꞉curso-clojure-cartao.core꞉> 
+({:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee "2021-05-03T04:03:27.000Z"], :value 100, :merchant "Drogarias Pacheco", :category "saude", :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 "2021-05-04T04:03:27.000Z"], :value 73, :merchant "Supermercado Guanabara", :category "mercado", :card-number 111111111111111})
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+({:card-number 0, :cvv 123, :expiry-date #object[org.joda.time.DateTime 0x158e1a69 "2027-03-31T00:00:00.000Z"], :limit 3000, :client-id 1} {:card-number 333333333333, :cvv 999, :expiry-date #object[org.joda.time.DateTime 0x2fc69a1f "2027-04-30T00:00:00.000Z"], :limit 4000, :client-id 1} {:card-number 5555555555555, :cvv 123, :expiry-date #object[org.joda.time.DateTime 0x617d750 "2030-09-30T00:00:00.000Z"], :limit 10000, :client-id 1})
+clj꞉curso-clojure-cartao.core꞉> 
+({:card-number 0, :cvv 123, :expiry-date #object[org.joda.time.DateTime 0x158e1a69 "2027-03-31T00:00:00.000Z"], :limit 3000, :client-id 1} {:card-number 333333333333, :cvv 999, :expiry-date #object[org.joda.time.DateTime 0x2fc69a1f "2027-04-30T00:00:00.000Z"], :limit 4000, :client-id 1} {:card-number 5555555555555, :cvv 123, :expiry-date #object[org.joda.time.DateTime 0x617d750 "2030-09-30T00:00:00.000Z"], :limit 10000, :client-id 1})
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+; Syntax error (ArityException) compiling at (src/curso_clojure_cartao/core.clj:21:1).
+; Wrong number of args (2) passed to: curso-clojure-cartao.core/client-credit-cards/fn--10164
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+
+clj꞉curso-clojure-cartao.core꞉> 
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+; Syntax error (ArityException) compiling at (src/curso_clojure_cartao/core.clj:22:1).
+; Wrong number of args (2) passed to: curso-clojure-cartao.core/client-credit-cards/fn--10226
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+
+clj꞉curso-clojure-cartao.core꞉> 
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+{:card-number 5555555555555, :cvv 123, :expiry-date #object[org.joda.time.DateTime 0x617d750 "2030-09-30T00:00:00.000Z"], :limit 10000, :client-id 1}
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+; Syntax error (ClassCastException) compiling at (src/curso_clojure_cartao/core.clj:22:1).
+; java.lang.Long cannot be cast to clojure.lang.IPersistentCollection
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+
+clj꞉curso-clojure-cartao.core꞉> 
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+; Syntax error (IllegalArgumentException) compiling at (src/curso_clojure_cartao/core.clj:22:1).
+; Don't know how to create ISeq from: java.lang.Long
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+
+clj꞉curso-clojure-cartao.core꞉> 
+clj꞉curso-clojure-cartao.core꞉> 
+; Execution error (IllegalArgumentException) at curso-clojure-cartao.core/client-credit-cards$fn (core.clj:20).
+; Don't know how to create ISeq from: java.lang.Long
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+a {:card-number 0, :cvv 123, :expiry-date #object[org.joda.time.DateTime 0x158e1a69 2027-03-31T00:00:00.000Z], :limit 3000, :client-id 1} b {:card-number 333333333333, :cvv 999, :expiry-date #object[org.joda.time.DateTime 0x2fc69a1f 2027-04-30T00:00:00.000Z], :limit 4000, :client-id 1}
+a nil b {:card-number 5555555555555, :cvv 123, :expiry-date #object[org.joda.time.DateTime 0x617d750 2030-09-30T00:00:00.000Z], :limit 10000, :client-id 1}
+nil
+clj꞉curso-clojure-cartao.core꞉> 
+a {:card-number 0, :cvv 123, :expiry-date #object[org.joda.time.DateTime 0x158e1a69 2027-03-31T00:00:00.000Z], :limit 3000, :client-id 1} b {:card-number 333333333333, :cvv 999, :expiry-date #object[org.joda.time.DateTime 0x2fc69a1f 2027-04-30T00:00:00.000Z], :limit 4000, :client-id 1}
+a nil b {:card-number 5555555555555, :cvv 123, :expiry-date #object[org.joda.time.DateTime 0x617d750 2030-09-30T00:00:00.000Z], :limit 10000, :client-id 1}
+nil
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+((p2__10455#) p1__10454#)
+clj꞉curso-clojure-cartao.core꞉> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+((p2__10455#) p1__10454#)
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+; Syntax error reading source at (src/curso_clojure_cartao/core.clj:20:32).
+; Invalid number: 2ß
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+
+clj꞉curso-clojure-cartao.core꞉> 
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+; Syntax error reading source at (src/curso_clojure_cartao/core.clj:20:32).
+; Invalid number: 2ß
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+
+clj꞉curso-clojure-cartao.core꞉> 
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+({:card-number 5555555555555, :cvv 123, :expiry-date #object[org.joda.time.DateTime 0x617d750 "2030-09-30T00:00:00.000Z"], :limit 10000, :client-id 1} p1__10559#)
+clj꞉curso-clojure-cartao.core꞉> 
+({:card-number 5555555555555, :cvv 123, :expiry-date #object[org.joda.time.DateTime 0x617d750 "2030-09-30T00:00:00.000Z"], :limit 10000, :client-id 1} p1__10559#)
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+({:card-number 5555555555555, :cvv 123, :expiry-date #object[org.joda.time.DateTime 0x617d750 "2030-09-30T00:00:00.000Z"], :limit 10000, :client-id 1} ({:card-number 333333333333, :cvv 999, :expiry-date #object[org.joda.time.DateTime 0x2fc69a1f "2027-04-30T00:00:00.000Z"], :limit 4000, :client-id 1} {:card-number 0, :cvv 123, :expiry-date #object[org.joda.time.DateTime 0x158e1a69 "2027-03-31T00:00:00.000Z"], :limit 3000, :client-id 1}))
+clj꞉curso-clojure-cartao.core꞉> 
+({:card-number 5555555555555, :cvv 123, :expiry-date #object[org.joda.time.DateTime 0x617d750 "2030-09-30T00:00:00.000Z"], :limit 10000, :client-id 1} ({:card-number 333333333333, :cvv 999, :expiry-date #object[org.joda.time.DateTime 0x2fc69a1f "2027-04-30T00:00:00.000Z"], :limit 4000, :client-id 1} {:card-number 0, :cvv 123, :expiry-date #object[org.joda.time.DateTime 0x158e1a69 "2027-03-31T00:00:00.000Z"], :limit 3000, :client-id 1}))
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+#'curso-clojure-cartao.core/client-credit-cards
+clj꞉curso-clojure-cartao.core꞉> 
+#'curso-clojure-cartao.core/client-credit-cards
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+#'curso-clojure-cartao.core/client-credit-cards
+clj꞉curso-clojure-cartao.core꞉> 
+#'curso-clojure-cartao.core/client-credit-cards
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+#'curso-clojure-cartao.core/client-credit-cards
+clj꞉curso-clojure-cartao.core꞉> 
+#'curso-clojure-cartao.core/client-credit-cards
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+#'curso-clojure-cartao.core/client-credit-cards
+clj꞉curso-clojure-cartao.core꞉> 
+#'curso-clojure-cartao.core/client-credit-cards
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+; Syntax error (ArityException) compiling at (src/curso_clojure_cartao/core.clj:22:3).
+; Wrong number of args (2) passed to: curso-clojure-cartao.core/client-credit-cards/fn--10861
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+
+clj꞉curso-clojure-cartao.core꞉> 
+clj꞉curso-clojure-cartao.core꞉> 
+; Execution error (ArityException) at curso-clojure-cartao.core/client-credit-cards (core.clj:20).
+; Wrong number of args (2) passed to: curso-clojure-cartao.core/client-credit-cards/fn--10861
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+({:card-number 5555555555555, :cvv 123, :expiry-date #object[org.joda.time.DateTime 0x617d750 "2030-09-30T00:00:00.000Z"], :limit 10000, :client-id 1} ({:card-number 333333333333, :cvv 999, :expiry-date #object[org.joda.time.DateTime 0x2fc69a1f "2027-04-30T00:00:00.000Z"], :limit 4000, :client-id 1} {:card-number 0, :cvv 123, :expiry-date #object[org.joda.time.DateTime 0x158e1a69 "2027-03-31T00:00:00.000Z"], :limit 3000, :client-id 1}))
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+({:card-number 5555555555555, :cvv 123, :expiry-date #object[org.joda.time.DateTime 0x617d750 "2030-09-30T00:00:00.000Z"], :limit 10000, :client-id 1} nil)
+clj꞉curso-clojure-cartao.core꞉> 
+({:card-number 5555555555555, :cvv 123, :expiry-date #object[org.joda.time.DateTime 0x617d750 "2030-09-30T00:00:00.000Z"], :limit 10000, :client-id 1} nil)
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+(0 333333333333 5555555555555)
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+; Error printing return value (ArityException) at clojure.lang.AFn/throwArity (AFn.java:429).
+; Wrong number of args (1) passed to: curso-clojure-cartao.core/credit-card-transactions
+; Evaluation of file core.clj failed: class clojure.lang.ExceptionInfo
+
+clj꞉curso-clojure-cartao.core꞉> 
+clj꞉curso-clojure-cartao.core꞉> 
+; Error printing return value (ArityException) at clojure.lang.AFn/throwArity (AFn.java:429).
+; Wrong number of args (1) passed to: curso-clojure-cartao.core/credit-card-transactions
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+(({:transaction-id 100, :date #object[org.joda.time.DateTime 0xa776d2a "2021-05-03T04:03:27.000Z"], :value 30, :merchant "Wursteria", :category "alimentacao", :card-number 0}) ({:transaction-id 104, :date #object[org.joda.time.DateTime 0x4ae44929 "2021-05-06T04:03:27.000Z"], :value 99, :merchant "Supermercado Guanabara", :category "mercado", :card-number 333333333333} {:transaction-id 105, :date #object[org.joda.time.DateTime 0x5e75a65e "2021-05-06T04:03:27.000Z"], :value 300, :merchant "Dominos", :category "alimentacao", :card-number 333333333333}) ())
+clj꞉curso-clojure-cartao.core꞉> 
+(({:transaction-id 100, :date #object[org.joda.time.DateTime 0xa776d2a "2021-05-03T04:03:27.000Z"], :value 30, :merchant "Wursteria", :category "alimentacao", :card-number 0}) ({:transaction-id 104, :date #object[org.joda.time.DateTime 0x4ae44929 "2021-05-06T04:03:27.000Z"], :value 99, :merchant "Supermercado Guanabara", :category "mercado", :card-number 333333333333} {:transaction-id 105, :date #object[org.joda.time.DateTime 0x5e75a65e "2021-05-06T04:03:27.000Z"], :value 300, :merchant "Dominos", :category "alimentacao", :card-number 333333333333}) ())
+clj꞉curso-clojure-cartao.core꞉> 
+(({:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee "2021-05-03T04:03:27.000Z"], :value 100, :merchant "Drogarias Pacheco", :category "saude", :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 "2021-05-04T04:03:27.000Z"], :value 73, :merchant "Supermercado Guanabara", :category "mercado", :card-number 111111111111111}) ({:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222}))
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+(({:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee "2021-05-03T04:03:27.000Z"], :value 100, :merchant "Drogarias Pacheco", :category "saude", :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 "2021-05-04T04:03:27.000Z"], :value 73, :merchant "Supermercado Guanabara", :category "mercado", :card-number 111111111111111}) ({:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222}))
+clj꞉curso-clojure-cartao.core꞉> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(({:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee "2021-05-03T04:03:27.000Z"], :value 100, :merchant "Drogarias Pacheco", :category "saude", :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 "2021-05-04T04:03:27.000Z"], :value 73, :merchant "Supermercado Guanabara", :category "mercado", :card-number 111111111111111}) ({:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222}))
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+(({:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee 2021-05-03T04:03:27.000Z], :value 100, :merchant Drogarias Pacheco, :category saude, :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 2021-05-04T04:03:27.000Z], :value 73, :merchant Supermercado Guanabara, :category mercado, :card-number 111111111111111}) ({:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e 2021-05-04T04:03:27.000Z], :value 1, :merchant Casa do Biscoito, :category mercado, :card-number 222222222222222}))
+(({:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee "2021-05-03T04:03:27.000Z"], :value 100, :merchant "Drogarias Pacheco", :category "saude", :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 "2021-05-04T04:03:27.000Z"], :value 73, :merchant "Supermercado Guanabara", :category "mercado", :card-number 111111111111111}) ({:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222}))
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+(({:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee 2021-05-03T04:03:27.000Z], :value 100, :merchant Drogarias Pacheco, :category saude, :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 2021-05-04T04:03:27.000Z], :value 73, :merchant Supermercado Guanabara, :category mercado, :card-number 111111111111111}) ({:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e 2021-05-04T04:03:27.000Z], :value 1, :merchant Casa do Biscoito, :category mercado, :card-number 222222222222222}))
+{nil [({:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee "2021-05-03T04:03:27.000Z"], :value 100, :merchant "Drogarias Pacheco", :category "saude", :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 "2021-05-04T04:03:27.000Z"], :value 73, :merchant "Supermercado Guanabara", :category "mercado", :card-number 111111111111111}) ({:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222})]}
+clj꞉curso-clojure-cartao.core꞉> 
+(({:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee 2021-05-03T04:03:27.000Z], :value 100, :merchant Drogarias Pacheco, :category saude, :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 2021-05-04T04:03:27.000Z], :value 73, :merchant Supermercado Guanabara, :category mercado, :card-number 111111111111111}) ({:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e 2021-05-04T04:03:27.000Z], :value 1, :merchant Casa do Biscoito, :category mercado, :card-number 222222222222222}))
+{nil [({:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee "2021-05-03T04:03:27.000Z"], :value 100, :merchant "Drogarias Pacheco", :category "saude", :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 "2021-05-04T04:03:27.000Z"], :value 73, :merchant "Supermercado Guanabara", :category "mercado", :card-number 111111111111111}) ({:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222})]}
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+{nil [({:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee "2021-05-03T04:03:27.000Z"], :value 100, :merchant "Drogarias Pacheco", :category "saude", :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 "2021-05-04T04:03:27.000Z"], :value 73, :merchant "Supermercado Guanabara", :category "mercado", :card-number 111111111111111}) ({:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222})]}
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+(({:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee 2021-05-03T04:03:27.000Z], :value 100, :merchant Drogarias Pacheco, :category saude, :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 2021-05-04T04:03:27.000Z], :value 73, :merchant Supermercado Guanabara, :category mercado, :card-number 111111111111111}) ({:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e 2021-05-04T04:03:27.000Z], :value 1, :merchant Casa do Biscoito, :category mercado, :card-number 222222222222222}))
+{nil [({:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee "2021-05-03T04:03:27.000Z"], :value 100, :merchant "Drogarias Pacheco", :category "saude", :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 "2021-05-04T04:03:27.000Z"], :value 73, :merchant "Supermercado Guanabara", :category "mercado", :card-number 111111111111111}) ({:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222})]}
+clj꞉curso-clojure-cartao.core꞉> 
+(({:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee 2021-05-03T04:03:27.000Z], :value 100, :merchant Drogarias Pacheco, :category saude, :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 2021-05-04T04:03:27.000Z], :value 73, :merchant Supermercado Guanabara, :category mercado, :card-number 111111111111111}) ({:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e 2021-05-04T04:03:27.000Z], :value 1, :merchant Casa do Biscoito, :category mercado, :card-number 222222222222222}))
+{nil [({:transact
+        
+        
+      ion-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee "2021-05-03T04:03:27.000Z"], :value 100, :merchant "Drogarias Pacheco", :category "saude", :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 "2021-05-04T04:03:27.000Z"], :value 73, :merchant "Supermercado Guanabara", :category "mercado", :card-number 111111111111111}) ({:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222})]}
+clj꞉curso-clojure-cartao.core꞉> 
+
+
+
+
+
+
+
+(({:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee 2021-05-03T04:03:27.000Z], :value 100, :merchant Drogarias Pacheco, :category saude, :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 2021-05-04T04:03:27.000Z], :value 73, :merchant Supermercado Guanabara, :category mercado, :card-number 111111111111111}) ({:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e 2021-05-04T04:03:27.000Z], :value 1, :merchant Casa do Biscoito, :category mercado, :card-number 222222222222222}))
+{nil [({:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee "2021-05-03T04:03:27.000Z"], :value 100, :merchant "Drogarias Pacheco", :category "saude", :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 "2021-05-04T04:03:27.000Z"], :value 73, :merchant "Supermercado Guanabara", :category "mercado", :card-number 111111111111111}) ({:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222})]}
+clj꞉curso-clojure-cartao.core꞉> 
+(({:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee "2021-05-03T04:03:27.000Z"], :value 100, :merchant "Drogarias Pacheco", :category "saude", :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 "2021-05-04T04:03:27.000Z"], :value 73, :merchant "Supermercado Guanabara", :category "mercado", :card-number 111111111111111}) ({:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222}))
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+(({:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee 2021-05-03T04:03:27.000Z], :value 100, :merchant Drogarias Pacheco, :category saude, :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 2021-05-04T04:03:27.000Z], :value 73, :merchant Supermercado Guanabara, :category mercado, :card-number 111111111111111}) ({:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e 2021-05-04T04:03:27.000Z], :value 1, :merchant Casa do Biscoito, :category mercado, :card-number 222222222222222}))
+{nil [({:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee "2021-05-03T04:03:27.000Z"], :value 100, :merchant "Drogarias Pacheco", :category "saude", :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 "2021-05-04T04:03:27.000Z"], :value 73, :merchant "Supermercado Guanabara", :category "mercado", :card-number 111111111111111}) ({:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222})]}
+clj꞉curso-clojure-cartao.core꞉> 
+#'curso-clojure-cartao.core/transactions-sorted-by-category
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+(({:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee 2021-05-03T04:03:27.000Z], :value 100, :merchant Drogarias Pacheco, :category saude, :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 2021-05-04T04:03:27.000Z], :value 73, :merchant Supermercado Guanabara, :category mercado, :card-number 111111111111111}) ({:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e 2021-05-04T04:03:27.000Z], :value 1, :merchant Casa do Biscoito, :category mercado, :card-number 222222222222222}))
+{nil [({:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee "2021-05-03T04:03:27.000Z"], :value 100, :merchant "Drogarias Pacheco", :category "saude", :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 "2021-05-04T04:03:27.000Z"], :value 73, :merchant "Supermercado Guanabara", :category "mercado", :card-number 111111111111111}) ({:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222})]}
+clj꞉curso-clojure-cartao.core꞉> 
+(({:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee "2021-05-03T04:03:27.000Z"], :value 100, :merchant "Drogarias Pacheco", :category "saude", :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 "2021-05-04T04:03:27.000Z"], :value 73, :merchant "Supermercado Guanabara", :category "mercado", :card-number 111111111111111}) ({:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222}))
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+(({:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee 2021-05-03T04:03:27.000Z], :value 100, :merchant Drogarias Pacheco, :category saude, :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 2021-05-04T04:03:27.000Z], :value 73, :merchant Supermercado Guanabara, :category mercado, :card-number 111111111111111}) ({:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e 2021-05-04T04:03:27.000Z], :value 1, :merchant Casa do Biscoito, :category mercado, :card-number 222222222222222}))
+{nil [({:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee "2021-05-03T04:03:27.000Z"], :value 100, :merchant "Drogarias Pacheco", :category "saude", :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 "2021-05-04T04:03:27.000Z"], :value 73, :merchant "Supermercado Guanabara", :category "mercado", :card-number 111111111111111}) ({:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222})]}
+clj꞉curso-clojure-cartao.core꞉> 
+(({:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee "2021-05-03T04:03:27.000Z"], :value 100, :merchant "Drogarias Pacheco", :category "saude", :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 "2021-05-04T04:03:27.000Z"], :value 73, :merchant "Supermercado Guanabara", :category "mercado", :card-number 111111111111111}) ({:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222}))
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+({:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee 2021-05-03T04:03:27.000Z], :value 100, :merchant Drogarias Pacheco, :category saude, :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 2021-05-04T04:03:27.000Z], :value 73, :merchant Supermercado Guanabara, :category mercado, :card-number 111111111111111} {:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e 2021-05-04T04:03:27.000Z], :value 1, :merchant Casa do Biscoito, :category mercado, :card-number 222222222222222})
+{"saude" [{:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee "2021-05-03T04:03:27.000Z"], :value 100, :merchant "Drogarias Pacheco", :category "saude", :card-number 111111111111111}], "mercado" [{:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 "2021-05-04T04:03:27.000Z"], :value 73, :merchant "Supermercado Guanabara", :category "mercado", :card-number 111111111111111} {:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222}]}
+clj꞉curso-clojure-cartao.core꞉> 
+({:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee 2021-05-03T04:03:27.000Z], :value 100, :merchant Drogarias Pacheco, :category saude, :card-number 111111111111111} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 2021-05-04T04:03:27.000Z], :value 73, :merchant Supermercado Guanabara, :category mercado, :card-number 111111111111111} {:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e 2021-05-04T04:03:27.000Z], :value 1, :merchant Casa do Biscoito, :category mercado, :card-number 222222222222222})
+{"saude" [{:transaction-id 101, :date #object[org.joda.time.DateTime 0x2f9ae5ee "2021-05-03T04:03:27.000Z"], :value 100, :merchant "Drogarias Pacheco", :category "saude", :card-number 111111111111111}], "mercado" [{:transaction-id 103, :date #object[org.joda.time.DateTime 0x17140407 "2021-05-04T04:03:27.000Z"], :value 73, :merchant "Supermercado Guanabara", :category "mercado", :card-number 111111111111111} {:transaction-id 102, :date #object[org.joda.time.DateTime 0x6e7ff67e "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222}]}
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+({:transaction-id 100, :date #object[org.joda.time.DateTime 0xa776d2a 2021-05-03T04:03:27.000Z], :value 30, :merchant Wursteria, :category alimentacao, :card-number 0} {:transaction-id 104, :date #object[org.joda.time.DateTime 0x4ae44929 2021-05-06T04:03:27.000Z], :value 99, :merchant Supermercado Guanabara, :category mercado, :card-number 333333333333} {:transaction-id 105, :date #object[org.joda.time.DateTime 0x5e75a65e 2021-05-06T04:03:27.000Z], :value 300, :merchant Dominos, :category alimentacao, :card-number 333333333333})
+{"alimentacao" [{:transaction-id 100, :date #object[org.joda.time.DateTime 0xa776d2a "2021-05-03T04:03:27.000Z"], :value 30, :merchant "Wursteria", :category "alimentacao", :card-number 0} {:transaction-id 105, :date #object[org.joda.time.DateTime 0x5e75a65e "2021-05-06T04:03:27.000Z"], :value 300, :merchant "Dominos", :category "alimentacao", :card-number 333333333333}], "mercado" [{:transaction-id 104, :date #object[org.joda.time.DateTime 0x4ae44929 "2021-05-06T04:03:27.000Z"], :value 99, :merchant "Supermercado Guanabara", :category "mercado", :card-number 333333333333}]}
+clj꞉curso-clojure-cartao.core꞉> 
+({:transaction-id 100, :date #object[org.joda.time.DateTime 0xa776d2a 2021-05-03T04:03:27.000Z], :value 30, :merchant Wursteria, :category alimentacao, :card-number 0} {:transaction-id 104, :date #object[org.joda.time.DateTime 0x4ae44929 2021-05-06T04:03:27.000Z], :value 99, :merchant Supermercado Guanabara, :category mercado, :card-number 333333333333} {:transaction-id 105, :date #object[org.joda.time.DateTime 0x5e75a65e 2021-05-06T04:03:27.000Z], :value 300, :merchant Dominos, :category alimentacao, :card-number 333333333333})
+{"alimentacao" [{:transaction-id 100, :date #object[org.joda.time.DateTime 0xa776d2a "2021-05-03T04:03:27.000Z"], :value 30, :merchant "Wursteria", :category "alimentacao", :card-number 0} {:transaction-id 105, :date #object[org.joda.time.DateTime 0x5e75a65e "2021-05-06T04:03:27.000Z"], :value 300, :merchant "Dominos", :category "alimentacao", :card-number 333333333333}], "mercado" [{:transaction-id 104, :date #object[org.joda.time.DateTime 0x4ae44929 "2021-05-06T04:03:27.000Z"], :value 99, :merchant "Supermercado Guanabara", :category "mercado", :card-number 333333333333}]}
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+{"alimentacao" [{:transaction-id 100, :date #object[org.joda.time.DateTime 0xa776d2a "2021-05-03T04:03:27.000Z"], :value 30, :merchant "Wursteria", :category "alimentacao", :card-number 0} {:transaction-id 105, :date #object[org.joda.time.DateTime 0x5e75a65e "2021-05-06T04:03:27.000Z"], :value 300, :merchant "Dominos", :category "alimentacao", :card-number 333333333333}], "mercado" [{:transaction-id 104, :date #object[org.joda.time.DateTime 0x4ae44929 "2021-05-06T04:03:27.000Z"], :value 99, :merchant "Supermercado Guanabara", :category "mercado", :card-number 333333333333}]}
+clj꞉curso-clojure-cartao.core꞉> 
+{"alimentacao" [{:transaction-id 100, :date #object[org.joda.time.DateTime 0xa776d2a "2021-05-03T04:03:27.000Z"], :value 30, :merchant "Wursteria", :category "alimentacao", :card-number 0} {:transaction-id 105, :date #object[org.joda.time.DateTime 0x5e75a65e "2021-05-06T04:03:27.000Z"], :value 300, :merchant "Dominos", :category "alimentacao", :card-number 333333333333}], "mercado" [{:transaction-id 104, :date #object[org.joda.time.DateTime 0x4ae44929 "2021-05-06T04:03:27.000Z"], :value 99, :merchant "Supermercado Guanabara", :category "mercado", :card-number 333333333333}]}
+clj꞉curso-clojure-cartao.core꞉> 
+{"alimentacao" [{:transaction-id 100, :date #object[org.joda.time.DateTime 0xa776d2a "2021-05-03T04:03:27.000Z"], :value 30, :merchant "Wursteria", :category "alimentacao", :card-number 0} {:transaction-id 105, :date #object[org.joda.time.DateTime 0x5e75a65e "2021-05-06T04:03:27.000Z"], :value 300, :merchant "Dominos", :category "alimentacao", :card-number 333333333333}], "mercado" [{:transaction-id 104, :date #object[org.joda.time.DateTime 0x4ae44929 "2021-05-06T04:03:27.000Z"], :value 99, :merchant "Supermercado Guanabara", :category "mercado", :card-number 333333333333}]}
+clj꞉curso-clojure-cartao.core꞉> 
+
+
+
+
+{"alimentacao" [{:transaction-id 100, :date #object[org.joda.time.DateTime 0xa776d2a "2021-05-03T04:03:27.000Z"], :value 30, :merchant "Wursteria", :category "alimentacao", :card-number 0} {:transaction-id 105, :date #object[org.joda.time.DateTime 0x5e75a65e "2021-05-06T04:03:27.000Z"], :value 300, :merchant "Dominos", :category "alimentacao", :card-number 333333333333}],
+ "mercado" [{:transaction-id 104, :date #object[org.joda.time.DateTime 0x4ae44929 "2021-05-06T04:03:27.000Z"], :value 99, :merchant "Supermercado Guanabara", :category "mercado", :card-number 333333333333}]}
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+{"alimentacao" [{:transaction-id 100, :date #object[org.joda.time.DateTime 0xa776d2a "2021-05-03T04:03:27.000Z"], :value 30, :merchant "Wursteria", :category "alimentacao", :card-number 0} {:transaction-id 105, :date #object[org.joda.time.DateTime 0x5e75a65e "2021-05-06T04:03:27.000Z"], :value 300, :merchant "Dominos", :category "alimentacao", :card-number 333333333333}],
+ "mercado" [{:transaction-id 104, :date #object[org.joda.time.DateTime 0x4ae44929 "2021-05-06T04:03:27.000Z"], :value 99, :merchant "Supermercado Guanabara", :category "mercado", :card-number 333333333333}]}
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+{"alimentacao" [{:transaction-id 100, :date #object[org.joda.time.DateTime 0xa776d2a "2021-05-03T04:03:27.000Z"], :value 30, :merchant "Wursteria", :category "alimentacao", :card-number 0} {:transaction-id 105, :date #object[org.joda.time.DateTime 0x5e75a65e "2021-05-06T04:03:27.000Z"], :value 300, :merchant "Dominos", :category "alimentacao", :card-number 333333333333}], "mercado" [{:transaction-id 104, :date #object[org.joda.time.DateTime 0x4ae44929 "2021-05-06T04:03:27.000Z"], :value 99, :merchant "Supermercado Guanabara", :category "mercado", :card-number 333333333333}]}
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: db.clj
+#'curso-clojure-cartao.db/transactions
+clj꞉curso-clojure-cartao.db꞉> 
+; Evaluating file: core.clj
+{"alimentacao" [{:transaction-id 100, :date #object[org.joda.time.DateTime 0x2e79762 "2021-05-03T04:03:27.000Z"], :value 30, :merchant "Wursteria", :category "alimentacao", :card-number 0} {:transaction-id 105, :date #object[org.joda.time.DateTime 0x5bd980a9 "2021-05-06T04:03:27.000Z"], :value 300, :merchant "Dominos", :category "alimentacao", :card-number 333333333333}], "mercado" [{:transaction-id 104, :date #object[org.joda.time.DateTime 0x185cdfdf "2021-05-06T04:03:27.000Z"], :value 99, :merchant "Supermercado Guanabara", :category "mercado", :card-number 333333333333}]}
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+{"saude" [{:transaction-id 106, :date #object[org.joda.time.DateTime 0x17e7f44f "2021-05-06T04:03:27.000Z"], :value 12, :merchant "DragaRaia", :category "saude", :card-number 4444444444444}],
+ "alimentacao" [{:transaction-id 107, :date #object[org.joda.time.DateTime 0x4789c020 "2021-05-10T04:03:27.000Z"], :value 10, :merchant "China in Box", :category "alimentacao", :card-number 4444444444444}],
+ "mercado" [{:transaction-id 108, :date #object[org.joda.time.DateTime 0xadc201d "2021-05-10T04:03:27.000Z"], :value 15, :merchant "Casa do Biscoito", :category "mercado", :card-number 4444444444444}]}
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+; Syntax error compiling at (src/curso_clojure_cartao/core.clj:41:1).
+; No such var: db/transations
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+
+clj꞉curso-clojure-cartao.core꞉> 
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+()
+clj꞉curso-clojure-cartao.core꞉> 
+()
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+oi
+; Error printing return value (NullPointerException) at curso-clojure-cartao.core/billing-statement$fn (core.clj:36).
+; null
+; Evaluation of file core.clj failed: class clojure.lang.ExceptionInfo
+
+clj꞉curso-clojure-cartao.core꞉> 
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+oi
+; Error printing return value (NullPointerException) at curso-clojure-cartao.core/billing-statement$fn (core.clj:36).
+; null
+; Evaluation of file core.clj failed: class clojure.lang.ExceptionInfo
+
+clj꞉curso-clojure-cartao.core꞉> 
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+oi
+; Error printing return value (NullPointerException) at curso-clojure-cartao.core/billing-statement$fn (core.clj:36).
+; null
+; Evaluation of file core.clj failed: class clojure.lang.ExceptionInfo
+
+clj꞉curso-clojure-cartao.core꞉> 
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+oi #object[org.joda.time.DateTime 0x2e79762 2021-05-03T04:03:27.000Z]
+; Error printing return value (NullPointerException) at curso-clojure-cartao.core/billing-statement$fn (core.clj:36).
+; null
+; Evaluation of file core.clj failed: class clojure.lang.ExceptionInfo
+
+clj꞉curso-clojure-cartao.core꞉> 
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+oi 05
+; Error printing return value (NullPointerException) at curso-clojure-cartao.core/billing-statement$fn (core.clj:36).
+; null
+; Evaluation of file core.clj failed: class clojure.lang.ExceptionInfo
+
+clj꞉curso-clojure-cartao.core꞉> 
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+; Error printing return value (ClassCastException) at curso-clojure-cartao.core/billing-statement$fn (core.clj:36).
+; java.lang.Boolean cannot be cast to clojure.lang.IFn
+; Evaluation of file core.clj failed: class clojure.lang.ExceptionInfo
+
+clj꞉curso-clojure-cartao.core꞉> 
+clj꞉curso-clojure-cartao.core꞉> 
+; Error printing return value (ClassCastException) at curso-clojure-cartao.core/billing-statement$fn (core.clj:36).
+; java.lang.Boolean cannot be cast to clojure.lang.IFn
+clj꞉curso-clojure-cartao.core꞉> 
+clojure.main/repl (main.clj:442)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:202)
+nrepl.middleware.session/session-exec (session.clj:201)
+java.lang.Thread/run (Thread.java:748)
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+; Error printing return value (ClassCastException) at curso-clojure-cartao.core/billing-statement$fn (core.clj:36).
+; java.lang.Boolean cannot be cast to clojure.lang.IFn
+; Evaluation of file core.clj failed: class clojure.lang.ExceptionInfo
+
+clj꞉curso-clojure-cartao.core꞉> 
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+; Error printing return value (ArityException) at clojure.lang.AFn/throwArity (AFn.java:429).
+; Wrong number of args (1) passed to: curso-clojure-cartao.core/billing-statement/fn--12401
+; Evaluation of file core.clj failed: class clojure.lang.ExceptionInfo
+
+clj꞉curso-clojure-cartao.core꞉> 
+clj꞉curso-clojure-cartao.core꞉> 
+#'curso-clojure-cartao.core/billing-statement
+clj꞉curso-clojure-cartao.core꞉> 
+; Syntax error compiling at (src/curso_clojure_cartao/core.clj:36:18).
+; Unable to resolve symbol: month-format in this context
+clj꞉curso-clojure-cartao.core꞉> 
+#'curso-clojure-cartao.core/billing-statement
+clj꞉curso-clojure-cartao.core꞉> 
+#'curso-clojure-cartao.core/billing-statement
+clj꞉curso-clojure-cartao.core꞉> 
+#'curso-clojure-cartao.core/billing-statement
+clj꞉curso-clojure-cartao.core꞉> 
+; Syntax error compiling at (src/curso_clojure_cartao/core.clj:36:18).
+; Unable to resolve symbol: month-format in this context
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+; Error printing return value (ClassCastException) at curso-clojure-cartao.core/billing-statement$fn (core.clj:36).
+; java.lang.Boolean cannot be cast to clojure.lang.IFn
+; Evaluation of file core.clj failed: class clojure.lang.ExceptionInfo
+
+clj꞉curso-clojure-cartao.core꞉> 
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+()
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+aiaiai 05 3
+aiaiai 05 3
+aiaiai 05 3
+aiaiai 05 3
+aiaiai 05 3
+aiaiai 05 3
+aiaiai 05 3
+aiaiai 05 3
+aiaiai 05 3
+()
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+aiaiai 05 5
+aiaiai 05 5
+aiaiai 05 5
+aiaiai 05 5
+aiaiai 05 5
+aiaiai 05 5
+aiaiai 05 5
+aiaiai 05 5
+aiaiai 05 5
+()
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+aiaiai 05 5
+aiaiai 05 5
+aiaiai 05 5
+aiaiai 05 5
+aiaiai 05 5
+aiaiai 05 5
+aiaiai 05 5
+aiaiai 05 5
+aiaiai 05 5
+()
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+; Error printing return value (ClassCastException) at clj-time.format/parse (format.clj:156).
+; org.joda.time.DateTime cannot be cast to java.lang.String
+; Evaluation of file core.clj failed: class clojure.lang.ExceptionInfo
+
+clj꞉curso-clojure-cartao.core꞉> 
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+aiaiai :date {:transaction-id 100, :date #object[org.joda.time.DateTime 0x2e79762 2021-05-03T04:03:27.000Z], :value 30, :merchant Wursteria, :category alimentacao, :card-number 0} 05 5
+aiaiai :date {:transaction-id 101, :date #object[org.joda.time.DateTime 0x103855fa 2021-05-03T04:03:27.000Z], :value 100, :merchant Drogarias Pacheco, :category saude, :card-number 111111111111111} 05 5
+aiaiai :date {:transaction-id 102, :date #object[org.joda.time.DateTime 0x7953170a 2021-05-04T04:03:27.000Z], :value 1, :merchant Casa do Biscoito, :category mercado, :card-number 222222222222222} 05 5
+aiaiai :date {:transaction-id 103, :date #object[org.joda.time.DateTime 0x15398dd7 2021-05-04T04:03:27.000Z], :value 73, :merchant Supermercado Guanabara, :category mercado, :card-number 111111111111111} 05 5
+aiaiai :date {:transaction-id 104, :date #object[org.joda.time.DateTime 0x185cdfdf 2021-05-06T04:03:27.000Z], :value 99, :merchant Supermercado Guanabara, :category mercado, :card-number 333333333333} 05 5
+aiaiai :date {:transaction-id 105, :date #object[org.joda.time.DateTime 0x5bd980a9 2021-05-06T04:03:27.000Z], :value 300, :merchant Dominos, :category alimentacao, :card-number 333333333333} 05 5
+aiaiai :date {:transaction-id 106, :date #object[org.joda.time.DateTime 0x17e7f44f 2021-05-06T04:03:27.000Z], :value 12, :merchant DragaRaia, :category saude, :card-number 4444444444444} 05 5
+aiaiai :date {:transaction-id 107, :date #object[org.joda.time.DateTime 0x4789c020 2021-05-10T04:03:27.000Z], :value 10, :merchant China in Box, :category alimentacao, :card-number 4444444444444} 05 5
+aiaiai :date {:transaction-id 108, :date #object[org.joda.time.DateTime 0xadc201d 2021-05-10T04:03:27.000Z], :value 15, :merchant Casa do Biscoito, :category mercado, :card-number 4444444444444} 05 5
+()
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+aiaiai #object[org.joda.time.DateTime 0x2e79762 2021-05-03T04:03:27.000Z] 05 5
+aiaiai #object[org.joda.time.DateTime 0x103855fa 2021-05-03T04:03:27.000Z] 05 5
+aiaiai #object[org.joda.time.DateTime 0x7953170a 2021-05-04T04:03:27.000Z] 05 5
+aiaiai #object[org.joda.time.DateTime 0x15398dd7 2021-05-04T04:03:27.000Z] 05 5
+aiaiai #object[org.joda.time.DateTime 0x185cdfdf 2021-05-06T04:03:27.000Z] 05 5
+aiaiai #object[org.joda.time.DateTime 0x5bd980a9 2021-05-06T04:03:27.000Z] 05 5
+aiaiai #object[org.joda.time.DateTime 0x17e7f44f 2021-05-06T04:03:27.000Z] 05 5
+aiaiai #object[org.joda.time.DateTime 0x4789c020 2021-05-10T04:03:27.000Z] 05 5
+aiaiai #object[org.joda.time.DateTime 0xadc201d 2021-05-10T04:03:27.000Z] 05 5
+()
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+aiaiai java.lang.String 5
+aiaiai java.lang.String 5
+aiaiai java.lang.String 5
+aiaiai java.lang.String 5
+aiaiai java.lang.String 5
+aiaiai java.lang.String 5
+aiaiai java.lang.String 5
+aiaiai java.lang.String 5
+aiaiai java.lang.String 5
+()
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+({:transaction-id 100, :date #object[org.joda.time.DateTime 0x2e79762 "2021-05-03T04:03:27.000Z"], :value 30, :merchant "Wursteria", :category "alimentacao", :card-number 0} {:transaction-id 101, :date #object[org.joda.time.DateTime 0x103855fa "2021-05-03T04:03:27.000Z"], :value 100, :merchant "Drogarias Pacheco", :category "saude", :card-number 111111111111111} {:transaction-id 102, :date #object[org.joda.time.DateTime 0x7953170a "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x15398dd7 "2021-05-04T04:03:27.000Z"], :value 73, :merchant "Supermercado Guanabara", :category "mercado", :card-number 111111111111111} {:transaction-id 104, :date #object[org.joda.time.DateTime 0x185cdfdf "2021-05-06T04:03:27.000Z"], :value 99, :merchant "Supermercado Guanabara", :category "mercado", :card-number 333333333333} {:transaction-id 105, :date #object[org.joda.time.DateTime 0x5bd980a9 "2021-05-06T04:03:27.000Z"], :value 300, :merchant "Dominos", :category "alimentacao", :card-number 333333333333} {:transaction-id 106, :date #object[org.joda.time.DateTime 0x17e7f44f "2021-05-06T04:03:27.000Z"], :value 12, :merchant "DragaRaia", :category "saude", :card-number 4444444444444} {:transaction-id 107, :date #object[org.joda.time.DateTime 0x4789c020 "2021-05-10T04:03:27.000Z"], :value 10, :merchant "China in Box", :category "alimentacao", :card-number 4444444444444} {:transaction-id 108, :date #object[org.joda.time.DateTime 0xadc201d "2021-05-10T04:03:27.000Z"], :value 15, :merchant "Casa do Biscoito", :category "mercado", :card-number 4444444444444})
+clj꞉curso-clojure-cartao.core꞉> 
+({:transaction-id 100, :date #object[org.joda.time.DateTime 0x2e79762 "2021-05-03T04:03:27.000Z"], :value 30, :merchant "Wursteria", :category "alimentacao", :card-number 0} {:transaction-id 101, :date #object[org.joda.time.DateTime 0x103855fa "2021-05-03T04:03:27.000Z"], :value 100, :merchant "Drogarias Pacheco", :category "saude", :card-number 111111111111111} {:transaction-id 102, :date #object[org.joda.time.DateTime 0x7953170a "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x15398dd7 "2021-05-04T04:03:27.000Z"], :value 73, :merchant "Supermercado Guanabara", :category "mercado", :card-number 111111111111111} {:transaction-id 104, :date #object[org.joda.time.DateTime 0x185cdfdf "2021-05-06T04:03:27.000Z"], :value 99, :merchant "Supermercado Guanabara", :category "mercado", :card-number 333333333333} {:transaction-id 105, :date #object[org.joda.time.DateTime 0x5bd980a9 "2021-05-06T04:03:27.000Z"], :value 300, :merchant "Dominos", :category "alimentacao", :card-number 333333333333} {:transaction-id 106, :date #object[org.joda.time.DateTime 0x17e7f44f "2021-05-06T04:03:27.000Z"], :value 12, :merchant "DragaRaia", :category "saude", :card-number 4444444444444} {:transaction-id 107, :date #object[org.joda.time.DateTime 0x4789c020 "2021-05-10T04:03:27.000Z"], :value 10, :merchant "China in Box", :category "alimentacao", :card-number 4444444444444} {:transaction-id 108, :date #object[org.joda.time.DateTime 0xadc201d "2021-05-10T04:03:27.000Z"], :value 15, :merchant "Casa do Biscoito", :category "mercado", :card-number 4444444444444})
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+()
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+({:transaction-id 100, :date #object[org.joda.time.DateTime 0x2e79762 "2021-05-03T04:03:27.000Z"], :value 30, :merchant "Wursteria", :category "alimentacao", :card-number 0} {:transaction-id 101, :date #object[org.joda.time.DateTime 0x103855fa "2021-05-03T04:03:27.000Z"], :value 100, :merchant "Drogarias Pacheco", :category "saude", :card-number 111111111111111} {:transaction-id 102, :date #object[org.joda.time.DateTime 0x7953170a "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x15398dd7 "2021-05-04T04:03:27.000Z"], :value 73, :merchant "Supermercado Guanabara", :category "mercado", :card-number 111111111111111} {:transaction-id 104, :date #object[org.joda.time.DateTime 0x185cdfdf "2021-05-06T04:03:27.000Z"], :value 99, :merchant "Supermercado Guanabara", :category "mercado", :card-number 333333333333} {:transaction-id 105, :date #object[org.joda.time.DateTime 0x5bd980a9 "2021-05-06T04:03:27.000Z"], :value 300, :merchant "Dominos", :category "alimentacao", :card-number 333333333333} {:transaction-id 106, :date #object[org.joda.time.DateTime 0x17e7f44f "2021-05-06T04:03:27.000Z"], :value 12, :merchant "DragaRaia", :category "saude", :card-number 4444444444444} {:transaction-id 107, :date #object[org.joda.time.DateTime 0x4789c020 "2021-05-10T04:03:27.000Z"], :value 10, :merchant "China in Box", :category "alimentacao", :card-number 4444444444444} {:transaction-id 108, :date #object[org.joda.time.DateTime 0xadc201d "2021-05-10T04:03:27.000Z"], :value 15, :merchant "Casa do Biscoito", :category "mercado", :card-number 4444444444444})
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+({:transaction-id 100, :date #object[org.joda.time.DateTime 0x2e79762 "2021-05-03T04:03:27.000Z"], :value 30, :merchant "Wursteria", :category "alimentacao", :card-number 0} {:transaction-id 101, :date #object[org.joda.time.DateTime 0x103855fa "2021-05-03T04:03:27.000Z"], :value 100, :merchant "Drogarias Pacheco", :category "saude", :card-number 111111111111111} {:transaction-id 102, :date #object[org.joda.time.DateTime 0x7953170a "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222} {:transaction-id 103, :date #object[org.joda.time.DateTime 0x15398dd7 "2021-05-04T04:03:27.000Z"], :value 73, :merchant "Supermercado Guanabara", :category "mercado", :card-number 111111111111111} {:transaction-id 104, :date #object[org.joda.time.DateTime 0x185cdfdf "2021-05-06T04:03:27.000Z"], :value 99, :merchant "Supermercado Guanabara", :category "mercado", :card-number 333333333333} {:transaction-id 105, :date #object[org.joda.time.DateTime 0x5bd980a9 "2021-05-06T04:03:27.000Z"], :value 300, :merchant "Dominos", :category "alimentacao", :card-number 333333333333} {:transaction-id 106, :date #object[org.joda.time.DateTime 0x17e7f44f "2021-05-06T04:03:27.000Z"], :value 12, :merchant "DragaRaia", :category "saude", :card-number 4444444444444} {:transaction-id 107, :date #object[org.joda.time.DateTime 0x4789c020 "2021-05-10T04:03:27.000Z"], :value 10, :merchant "China in Box", :category "alimentacao", :card-number 4444444444444} {:transaction-id 108, :date #object[org.joda.time.DateTime 0xadc201d "2021-05-10T04:03:27.000Z"], :value 15, :merchant "Casa do Biscoito", :category "mercado", :card-number 4444444444444})
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+640
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+; Error printing return value (ClassCastException) at curso-clojure-cartao.core/search-transaction$fn (core.clj:49).
+; java.lang.Boolean cannot be cast to clojure.lang.IFn
+; Evaluation of file core.clj failed: class clojure.lang.ExceptionInfo
+
+clj꞉curso-clojure-cartao.core꞉> 
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+({:transaction-id 102, :date #object[org.joda.time.DateTime 0x7953170a "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222} {:transaction-id 108, :date #object[org.joda.time.DateTime 0xadc201d "2021-05-10T04:03:27.000Z"], :value 15, :merchant "Casa do Biscoito", :category "mercado", :card-number 4444444444444})
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+({:transaction-id 102, :date #object[org.joda.time.DateTime 0x7953170a "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222} {:transaction-id 108, :date #object[org.joda.time.DateTime 0xadc201d "2021-05-10T04:03:27.000Z"], :value 15, :merchant "Casa do Biscoito", :category "mercado", :card-number 4444444444444})
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+({:transaction-id 102, :date #object[org.joda.time.DateTime 0x7953170a "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222} {:transaction-id 108, :date #object[org.joda.time.DateTime 0xadc201d "2021-05-10T04:03:27.000Z"], :value 15, :merchant "Casa do Biscoito", :category "mercado", :card-number 4444444444444})
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+({:transaction-id 102, :date #object[org.joda.time.DateTime 0x7953170a "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222} {:transaction-id 108, :date #object[org.joda.time.DateTime 0xadc201d "2021-05-10T04:03:27.000Z"], :value 15, :merchant "Casa do Biscoito", :category "mercado", :card-number 4444444444444})
+clj꞉curso-clojure-cartao.core꞉> 
+{"saude" [{:transaction-id 106, :date #object[org.joda.time.DateTime 0x17e7f44f "2021-05-06T04:03:27.000Z"], :value 12, :merchant "DragaRaia", :category "saude", :card-number 4444444444444}], "alimentacao" [{:transaction-id 107, :date #object[org.joda.time.DateTime 0x4789c020 "2021-05-10T04:03:27.000Z"], :value 10, :merchant "China in Box", :category "alimentacao", :card-number 4444444444444}], "mercado" [{:transaction-id 108, :date #object[org.joda.time.DateTime 0xadc201d "2021-05-10T04:03:27.000Z"], :value 15, :merchant "Casa do Biscoito", :category "mercado", :card-number 4444444444444}]}
+clj꞉curso-clojure-cartao.core꞉> 
+{"saude" [{:transaction-id 106, :date #object[org.joda.time.DateTime 0x17e7f44f "2021-05-06T04:03:27.000Z"], :value 12, :merchant "DragaRaia", :category "saude", :card-number 4444444444444}], "alimentacao" [{:transaction-id 107, :date #object[org.joda.time.DateTime 0x4789c020 "2021-05-10T04:03:27.000Z"], :value 10, :merchant "China in Box", :category "alimentacao", :card-number 4444444444444}], "mercado" [{:transaction-id 108, :date #object[org.joda.time.DateTime 0xadc201d "2021-05-10T04:03:27.000Z"], :value 15, :merchant "Casa do Biscoito", :category "mercado", :card-number 4444444444444}]}
+clj꞉curso-clojure-cartao.core꞉> 
+{"saude" [{:transaction-id 106, :date #object[org.joda.time.DateTime 0x17e7f44f "2021-05-06T04:03:27.000Z"], :value 12, :merchant "DragaRaia", :category "saude", :card-number 4444444444444}], "alimentacao" [{:transaction-id 107, :date #object[org.joda.time.DateTime 0x4789c020 "2021-05-10T04:03:27.000Z"], :value 10, :merchant "China in Box", :category "alimentacao", :card-number 4444444444444}], "mercado" [{:transaction-id 108, :date #object[org.joda.time.DateTime 0xadc201d "2021-05-10T04:03:27.000Z"], :value 15, :merchant "Casa do Biscoito", :category "mercado", :card-number 4444444444444}]}
+clj꞉curso-clojure-cartao.core꞉> 
+{"saude" [{:transaction-id 106, :date #object[org.joda.time.DateTime 0x17e7f44f "2021-05-06T04:03:27.000Z"], :value 12, :merchant "DragaRaia", :category "saude", :card-number 4444444444444}], "alimentacao" [{:transaction-id 107, :date #object[org.joda.time.DateTime 0x4789c020 "2021-05-10T04:03:27.000Z"], :value 10, :merchant "China in Box", :category "alimentacao", :card-number 4444444444444}], "mercado" [{:transaction-id 108, :date #object[org.joda.time.DateTime 0xadc201d "2021-05-10T04:03:27.000Z"], :value 15, :merchant "Casa do Biscoito", :category "mercado", :card-number 4444444444444}]}
+clj꞉curso-clojure-cartao.core꞉> 
+{"saude" [{:transaction-id 106, :date #object[org.joda.time.DateTime 0x17e7f44f "2021-05-06T04:03:27.000Z"], :value 12, :merchant "DragaRaia", :category "saude", :card-number 4444444444444}], "alimentacao" [{:transaction-id 107, :date #object[org.joda.time.DateTime 0x4789c020 "2021-05-10T04:03:27.000Z"], :value 10, :merchant "China in Box", :category "alimentacao", :card-number 4444444444444}], "mercado" [{:transaction-id 108, :date #object[org.joda.time.DateTime 0xadc201d "2021-05-10T04:03:27.000Z"], :value 15, :merchant "Casa do Biscoito", :category "mercado", :card-number 4444444444444}]}
+clj꞉curso-clojure-cartao.core꞉> 
+{"saude" [{:transaction-id 106, :date #object[org.joda.time.DateTime 0x17e7f44f "2021-05-06T04:03:27.000Z"], :value 12, :merchant "DragaRaia", :category "saude", :card-number 4444444444444}], "alimentacao" [{:transaction-id 107, :date #object[org.joda.time.DateTime 0x4789c020 "2021-05-10T04:03:27.000Z"], :value 10, :merchant "China in Box", :category "alimentacao", :card-number 4444444444444}], "mercado" [{:transaction-id 108, :date #object[org.joda.time.DateTime 0xadc201d "2021-05-10T04:03:27.000Z"], :value 15, :merchant "Casa do Biscoito", :category "mercado", :card-number 4444444444444}]}
+clj꞉curso-clojure-cartao.core꞉> 
+
+
+
+
+
+
+
+
+
+
+{"saude" [{:transaction-id 106, :date #object[org.joda.time.DateTime 0x17e7f44f "2021-05-06T04:03:27.000Z"], :value 12, :merchant "DragaRaia", :category "saude", :card-number 4444444444444}], "alimentacao" [{:transaction-id 107, :date #object[org.joda.time.DateTime 0x4789c020 "2021-05-10T04:03:27.000Z"], :value 10, :merchant "China in Box", :category "alimentacao", :card-number 4444444444444}], "mercado" [{:transaction-id 108, :date #object[org.joda.time.DateTime 0xadc201d "2021-05-10T04:03:27.000Z"], :value 15, :merchant "Casa do Biscoito", :category "mercado", :card-number 4444444444444}]}
+clj꞉curso-clojure-cartao.core꞉> 
+{"saude" [{:transaction-id 106, :date #object[org.joda.time.DateTime 0x17e7f44f "2021-05-06T04:03:27.000Z"], :value 12, :merchant "DragaRaia", :category "saude", :card-number 4444444444444}], "alimentacao" [{:transaction-id 107, :date #object[org.joda.time.DateTime 0x4789c020 "2021-05-10T04:03:27.000Z"], :value 10, :merchant "China in Box", :category "alimentacao", :card-number 4444444444444}], "mercado" [{:transaction-id 108, :date #object[org.joda.time.DateTime 0xadc201d "2021-05-10T04:03:27.000Z"], :value 15, :merchant "Casa do Biscoito", :category "mercado", :card-number 4444444444444}]}
+clj꞉curso-clojure-cartao.core꞉> 
+; Syntax error compiling at (src/curso_clojure_cartao/core.clj:1:8033).
+; Unable to resolve symbol: my-card-transactions1 in this context
+clj꞉curso-clojure-cartao.core꞉> 
+; Syntax error compiling at (src/curso_clojure_cartao/core.clj:67:3).
+; Unable to resolve symbol: my-card-transactions1 in this context
+clj꞉curso-clojure-cartao.core꞉> 
+; Syntax error compiling at (src/curso_clojure_cartao/core.clj:68:1).
+; Unable to resolve symbol: my-card-transactions2 in this context
+clj꞉curso-clojure-cartao.core꞉> 
+; Syntax error compiling at (src/curso_clojure_cartao/core.clj:68:1).
+; Unable to resolve symbol: my-card-transactions2 in this context
+clj꞉curso-clojure-cartao.core꞉> 
+; Syntax error compiling at (src/curso_clojure_cartao/core.clj:68:1).
+; Unable to resolve symbol: my-card-transactions2 in this context
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+({:transaction-id 102, :date #object[org.joda.time.DateTime 0x7953170a "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222} {:transaction-id 108, :date #object[org.joda.time.DateTime 0xadc201d "2021-05-10T04:03:27.000Z"], :value 15, :merchant "Casa do Biscoito", :category "mercado", :card-number 4444444444444})
+clj꞉curso-clojure-cartao.core꞉> 
+{"saude" [{:transaction-id 106, :date #object[org.joda.time.DateTime 0x17e7f44f "2021-05-06T04:03:27.000Z"], :value 12, :merchant "DragaRaia", :category "saude", :card-number 4444444444444}], "alimentacao" [{:transaction-id 107, :date #object[org.joda.time.DateTime 0x4789c020 "2021-05-10T04:03:27.000Z"], :value 10, :merchant "China in Box", :category "alimentacao", :card-number 4444444444444}], "mercado" [{:transaction-id 108, :date #object[org.joda.time.DateTime 0xadc201d "2021-05-10T04:03:27.000Z"], :value 15, :merchant "Casa do Biscoito", :category "mercado", :card-number 4444444444444}]}
+clj꞉curso-clojure-cartao.core꞉> 
+{"saude" [{:transaction-id 101, :date #object[org.joda.time.DateTime 0x103855fa "2021-05-03T04:03:27.000Z"], :value 100, :merchant "Drogarias Pacheco", :category "saude", :card-number 111111111111111}], "mercado" [{:transaction-id 103, :date #object[org.joda.time.DateTime 0x15398dd7 "2021-05-04T04:03:27.000Z"], :value 73, :merchant "Supermercado Guanabara", :category "mercado", :card-number 111111111111111}]}
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+({:transaction-id 102, :date #object[org.joda.time.DateTime 0x7953170a "2021-05-04T04:03:27.000Z"], :value 1, :merchant "Casa do Biscoito", :category "mercado", :card-number 222222222222222} {:transaction-id 108, :date #object[org.joda.time.DateTime 0xadc201d "2021-05-10T04:03:27.000Z"], :value 15, :merchant "Casa do Biscoito", :category "mercado", :card-number 4444444444444})
+clj꞉curso-clojure-cartao.core꞉> 
+173
+clj꞉curso-clojure-cartao.core꞉> 
+; Evaluating file: core.clj
+()
+clj꞉curso-clojure-cartao.core꞉> 
+()
+clj꞉curso-clojure-cartao.core꞉> 
+({:transaction-id 108, :date #object[org.joda.time.DateTime 0xadc201d "2021-05-10T04:03:27.000Z"], :value 15, :merchant "Casa do Biscoito", :category "mercado", :card-number 4444444444444})
+clj꞉curso-clojure-cartao.core꞉> 
