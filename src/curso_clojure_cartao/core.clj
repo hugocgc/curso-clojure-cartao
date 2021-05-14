@@ -1,6 +1,6 @@
 (ns curso-clojure-cartao.core
   (:gen-class)
-  (:require [clj-time.format :as tf])
+  (:require [clj-time.core :as t])
   (:require [curso-clojure-cartao.db :as db]))
 
 (defn client-by-id
@@ -30,14 +30,11 @@
   [transactions]
   (group-by :category transactions))
 
-(defn transaction-in-month?
-  [month transaction]
-  (let [month-format (tf/formatter "MM")]
-    (= (tf/unparse month-format (:date transaction)) month)))
-
 (defn billing-statement
   [month transactions]
-  (filter #(transaction-in-month? month %) transactions))
+  (filter
+   #(= month (t/month (:date %)))
+   transactions))
 
 (defn transactions-total-value
   [transactions]
@@ -46,7 +43,9 @@
 
 (defn search-transaction
   [key value transactions]
-  (filter #(= (key %) value) transactions))
+  (filter
+   #(= (key %) value)
+   transactions))
 
 
 ;;Representação dos dados do cliente (nome, cpf, email)
@@ -69,7 +68,7 @@
 
 
 ;;Cálculo do valor da fatura do mês (opcional)
-(def my-billing-statement (billing-statement "05" my-card-transactions1))
+(def my-billing-statement (billing-statement 5 my-card-transactions1))
 (transactions-total-value my-billing-statement)
 
 ;;Busca de compras pelo valor ou estabelecimento (opcional)
